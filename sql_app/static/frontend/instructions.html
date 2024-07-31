@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Face Recognition Instructions</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    ul {
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="checkbox"] {
+      margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    #start-recognition-button {
+      margin-top: 20px;
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    #start-recognition-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Face Recognition Instructions</h2>
+    <ul>
+      <li>Ensure that the webcam is open and functional.</li>
+      <li>Do not wear a mask during the face recognition process.</li>
+      <li>Ensure that the lighting conditions are appropriate for accurate results.</li>
+      <li>Keep your face steady and avoid any movement or shaking.</li>
+      <li>Multiple individuals should not be present in the camera frame simultaneously.</li>
+      <li>Maintain a safe distance from the camera.</li>
+      <li>Photos will be captured for the purpose of face recognition.</li>
+      <li>If the results are not satisfactory, please retry the process.</li>
+      <li>Please be patient as the recognition process may take up to a minute.</li>
+    </ul>
+    <label>
+      Once you have read the instructions, click the button below to start the face recognition process.
+    </label>
+  </form>
+  <button id="start-recognition-button" onclick="checkuser()" value="Start Face Recognition" >Start Face Recognition</button>
+  <script src="/static/script.js"></script>
+</body>
+</html>

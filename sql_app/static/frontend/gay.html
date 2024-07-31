@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spoofer Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f7f7f7;
+    }
+
+    .spoofer-text {
+      font-size: 72px;
+      font-weight: bold;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 2s linear forwards, fadeOut 2s linear 4s forwards;
+      color: #ff4500; /* Custom text color (orange) */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adding a subtle text shadow */
+      border: 3px solid #ff4500; /* Adding a border */
+      padding: 20px; /* Adding some padding */
+      border-radius: 10px; /* Rounding the corners */
+    }
+
+    /* Keyframes for the animation */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fadeOut {
+      0% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="spoofer-text">YOU ARE SPOOFER</div>
+
+  <script>
+    // JavaScript for redirection
+    function redirectToPage() {
+      window.location.href = "/"; 
+
+    // Automatically redirect after 6 seconds
+    }
+    setTimeout(redirectToPage, 3000);
+  </script>
+</body>
+</html>

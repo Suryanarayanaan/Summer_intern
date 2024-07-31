@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Gallery</title>
+  
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  
+  <!-- Custom styles for this template -->
+  <style>
+    body {
+      background-image: url("bbackgrnd.avif"); /* Replace "your-image.jpg" with the path to your desired background image */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 50px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      color: #343a40;
+      margin-bottom: 30px;
+    }
+    
+    .form-control {
+      border-color: #ced4da;
+    }
+    
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    
+    .btn-primary:hover {
+      background-color: #0069d9;
+      border-color: #0062cc;
+    }
+    
+    .form-page {
+      display: none;
+    }
+    
+    .form-page.active {
+      display: block;
+    }
+  
+    
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-warning">
+    <a class="navbar-brand" href="#">
+      <img src="logo-png.png" alt="Logo" width="30" height="30" class="mr-2">
+      PONNI
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="scholarshipDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Scholarship Available
+          </a>
+          <div class="dropdown-menu" aria-labelledby="scholarshipDropdown">
+            <a class="dropdown-item" href="#">Central Sector (UG/PG)</a>
+            <a class="dropdown-item" href="#">Private/Alumni (UG)</a>
+            <a class="dropdown-item" href="#">Endowments (UG)</a>
+            <a class="dropdown-item" href="#">BC/MBC Regular (UG)</a>
+            <a class="dropdown-item" href="#">BC/MBC Regular (PG)</a>
+            <a class="dropdown-item" href="#">SC/ST Regular (UG)</a>
+            <a class="dropdown-item" href="#">SC/ST Regular (PG)</a>
+            <a class="dropdown-item" href="#">SC/ST (PMSS) Self-Support (UG)</a>
+            <a class="dropdown-item" href="#">SC/ST (PMSS) Self-Support (PG)</a>
+            <a class="dropdown-item" href="#">SC/ST Special loan for Hostel Fee (UG/PG)</a>
+            <!-- Add more scholarship options as needed -->
+          </div>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" id="apply">Apply</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="logout-button" onclick="logout()" href="index.html">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container mt-5">
+    <h2>Gallery</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="backgrnd.jpg" alt="Image 1" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+        <img src="backgrnd2.jpg" alt="Image 2" class="img-fluid">
+      </div>
+      
+      <div class="col-md-4">
+        <img src="backgrnd3.jpg" alt="Image 3" class="img-fluid">
+      </div><br>
+      <div class="col-md-4">
+          <img src="eScholarship3.jpg" alt="Image 1" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <script src="/static/script.js"></script>
+  </body>
+  </html>

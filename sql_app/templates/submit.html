@@ -1,0 +1,128 @@
+<!-- submit.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONFIRMATION</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+  <style>
+    /* ... Your existing CSS styles ... */
+    .table {
+      font-size: 16px;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .table thead th {
+      font-weight: bold;
+      background-color: #f2f2f2;
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    .table tbody td {
+      font-weight: bold;
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    .confirmation-title {
+      text-align: center;
+      margin-top: 10px;
+      color: #007bff;
+    }
+    .confirmation-item strong {
+      font-weight: bold;
+    }
+    .logout-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .confirmation-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .confirmation-item strong {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .confirmation-item img {
+      max-width: 100px;
+      height: auto;
+    }
+
+    /* Additional styles for responsiveness */
+    @media (max-width: 767px) {
+      .confirmation-item {
+        flex-direction: column;
+      }
+
+      .confirmation-item strong {
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+    <h2 class="confirmation-title" style="margin-top: 10px;">CONFIRMATION</h2>
+    <br>
+    <!-- Add the image container with the image you want to display -->
+    <div class="confirmation-item">
+      <img src="/static/user.{{user_id}}.jpg" alt="Image" style="float: right; max-width: 150px; margin-left: 10px;">
+    </div>
+<div class="confirmation-item">
+      <strong>APPLICATION NUMBER: {{ app_no }}</strong>
+    </div>
+    <br>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th colspan="2" style="background-color: #007bff; color: white; text-align: center; font-size: medium;">DETAILS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Name:</td>
+          <td>{{ name }}</td>
+        </tr>
+        <tr>
+          <td>Institution Name:</td>
+          <td>{{ inst_name }}</td>
+        </tr>
+        <tr>
+          <td>Course Name:</td>
+          <td>{{ course_name }}</td>
+        </tr>
+        <tr>
+          <td>Annual Income:</td>
+          <td>{{ annual_income }}</td>
+        </tr>
+        <tr>
+          <td>Community:</td>
+          <td>{{ community }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Move the "STATUS" text below the table -->
+    <div class="confirmation-item">
+      <strong>STATUS: APPLICATION SUBMITTED</strong>
+    </div>
+
+    <div class="logout-button">
+      <a href="http://localhost:8000/" class="btn btn-primary">Logout</a>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

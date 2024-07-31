@@ -1,0 +1,100 @@
+<!-- submit.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONFIRMATION</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+  <style>
+    /* ... Your existing CSS styles ... */
+    .table {
+      font-size: 16px;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .table thead th {
+      font-weight: bold;
+      background-color: #f2f2f2;
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    .table tbody td {
+      font-weight: bold;
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    .confirmation-title {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+    .confirmation-item strong {
+      font-weight: bold;
+    }
+    .logout-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="confirmation-title">CONFIRMATION</h2>
+    <div class="confirmation-item">
+      <strong>APPLICATION NUMBER: {{ app_no }}</strong>
+    </div>
+    <div class="confirmation-item">
+      <strong>STATUS: APPLICATION SUBMITTED</strong>
+    </div>
+    <!-- Add a table to display the tabulated data -->
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th style="background-color: #007bff; color: white;">Field</th>
+          <th style="background-color: #007bff; color: white;">Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Name:</td>
+          <td>{{ name }}</td>
+        </tr>
+        <tr>
+          <td>Institution Name:</td>
+          <td>{{ inst_name }}</td>
+        </tr>
+        <tr>
+          <td>Course Name:</td>
+          <td>{{ course_name }}</td>
+        </tr>
+        <tr>
+          <td>Annual Income:</td>
+          <td>{{ annual_income }}</td>
+        </tr>
+        <tr>
+          <td>Community:</td>
+          <td>{{ community }}</td>
+        </tr>
+        <tr>
+          <td>Application Number:</td>
+          <td>{{ app_no }}</td>
+        </tr>
+        <tr>
+          <td>User ID:</td>
+          <td>{{ user_id }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="logout-button">
+      <a href="http://localhost:8000/" class="btn btn-primary">Logout</a>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

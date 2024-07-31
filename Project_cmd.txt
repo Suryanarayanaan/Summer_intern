@@ -1,0 +1,6 @@
+cd D:\PROJECT\v-env\Scripts
+d:
+activate
+cd ../..
+uvicorn sql_app.main:app --reload
+

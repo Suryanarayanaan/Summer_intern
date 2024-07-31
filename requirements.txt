@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+passlib
+bcrypt
+python-jose
+python-multipart
+opencv-python
+Pillow
+onnxruntime
+opencv-contrib-python
+pymupdf
+jinja2

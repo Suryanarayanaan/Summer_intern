@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Home | Ponni</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style>
+        /* Custom CSS */
+        body {
+          background-image: url('contact.avif');
+          background-color: #a1ed84;
+          color: #333;
+          font-family: Arial, sans-serif;
+        }
+  
+        .container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #c9f1f7;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+  
+        h1, h2, h3, h4, h5, h6 {
+          text-transform: uppercase;
+        }
+  
+        textarea {
+          width: 100%;
+          height: 150px;
+          resize: vertical;
+        }
+  
+        p {
+          margin-bottom: 10px;
+          font-size: 24px;
+        }
+  
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+        }
+  
+        li {
+          margin-bottom: 5px;
+        }
+      </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-warning">
+      <a class="navbar-brand" href="#">
+        <img src="logo-png.png" alt="Logo" width="30" height="30" class="mr-2">
+        PONNI
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="scholarshipDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Scholarship Available
+            </a>
+            <div class="dropdown-menu" aria-labelledby="scholarshipDropdown">
+              <a class="dropdown-item" href="#">Central Sector (UG/PG)</a>
+              <a class="dropdown-item" href="#">Private/Alumni (UG)</a>
+              <a class="dropdown-item" href="#">Endowments (UG)</a>
+              <a class="dropdown-item" href="#">BC/MBC Regular (UG)</a>
+              <a class="dropdown-item" href="#">BC/MBC Regular (PG)</a>
+              <a class="dropdown-item" href="#">SC/ST Regular (UG)</a>
+              <a class="dropdown-item" href="#">SC/ST Regular (PG)</a>
+              <a class="dropdown-item" href="#">SC/ST (PMSS) Self-Support (UG)</a>
+              <a class="dropdown-item" href="#">SC/ST (PMSS) Self-Support (PG)</a>
+              <a class="dropdown-item" href="#">SC/ST Special loan for Hostel Fee (UG/PG)</a>
+              <!-- Add more scholarship options as needed -->
+            </div>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" id="apply">Apply</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        <li class="nav-item">
+          <a class="logout-button" onclick="logout()" href="index.html">Logout</a>
+        </li>
+        </ul>
+      </div>
+    </nav><br>
+    <br>
+
+    <div class="container mt-5">
+      <h1>Contact Us:</h1>
+      <div>
+        <h5>Write your query:</h5>
+        <textarea class="form-control" rows="1"></textarea>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div><br>
+      <br>
+      <div>
+        <h3>Email ID: </h3>
+        <p><span id="email">ponnischlps7@gmail.com</span></div></p>
+        <br><br>
+        <h3>Contact Numbers:</h3>
+        <ul>
+          <li>044 2428 3496</li>
+          <li>044 2428 3458</li>
+          <li>044 2428 3496</li>
+        </ul>
+      </div>
+    </div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

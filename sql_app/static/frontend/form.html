@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Sample Form</title>
+  
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <!-- Custom styles for this template -->
+  <style>
+    body {
+      background-color: #c9f1f7;
+    }
+
+    .container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 50px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2,
+    h3 {
+      color: #3d4034;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-family: Arial, sans-serif;
+    }
+
+   
+    .form-control {
+      border-color: #3d88d2;
+    }
+
+    .btn-primary {
+      background-color: #496ded;
+      border-color: #496ded;
+    }
+
+    .btn-primary:hover {
+      background-color: #0069d9;
+      border-color: #0062cc;
+    }
+
+    .form-page {
+      display: none;
+    }
+
+    .form-page.active {
+      display: block;
+    }
+
+    /* Background color for each page */
+    #page-1 {
+      background-color: #f8f9fa;
+    }
+
+    #page-2 {
+      background-color: #f8f9fa;
+    }
+
+    #page-3 {
+      background-color: #f8f9fa;
+    }
+
+    #page-4 {
+      background-color: #f8f9fa;
+    }
+
+    #page-5 {
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-warning">
+    <a class="navbar-brand" href="#">
+      <img src="logo-png.png" alt="Logo" width="30" height="30" class="mr-2">
+      PONNI
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="scholarshipDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Scholarship Available
+          </a>
+          <div class="dropdown-menu" aria-labelledby="scholarshipDropdown">
+            <a class="dropdown-item" href="#">Central Sector (UG/PG)</a>
+            <a class="dropdown-item" href="#">Private/Alumni (UG)</a>
+            <a class="dropdown-item" href="#">Endowments (UG)</a>
+            <a class="dropdown-item" href="#">BC/MBC Regular (UG)</a>
+            <a class="dropdown-item" href="#">BC/MBC Regular (PG)</a>
+            <a class="dropdown-item" href="#">SC/ST Regular (UG)</a>
+            <a class="dropdown-item" href="#">SC/ST Regular (PG)</a>
+            <a class="dropdown-item" href="#">SC/ST (PMSS) Self-Support (UG)</a>
+            <a class="dropdown-item" href="#">SC/ST (PMSS) Self-Support (PG)</a>
+            <a class="dropdown-item" href="#">SC/ST Special loan for Hostel Fee (UG/PG)</a>
+            <!-- Add more scholarship options as needed -->
+          </div>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="form.html">Apply</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            User Profile
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="#">Name of User</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="index.html">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+  <div class="container">
+    <u><h2 class="text-center">APPLICATION</h2></u>
+    <form id="form-pagination" class="form-horizontal">
+      
+      <!-- Page 1 - Personal Details -->
+      <div class="form-page active" id="page-1">
+        
+          <h3>Page 1: Personal Details</h3>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label"  >Student Name</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="name">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Date of Birth</label>
+          <div class="col-sm-8">
+            <input type="date" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Mobile Number</label>
+          <div class="col-sm-8">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">+91</span>
+              </div>
+              <input type="text" class="form-control" maxlength="10">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Disabled or Not</label>
+          <div class="col-sm-8">
+            <select class="form-control">
+              <option value="no">No</option>
+              <option value="yes">Yes</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Type of Disability</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Marital Status</label>
+          <div class="col-sm-8">
+            <select class="form-control">
+              <option value="single">Single</option>
+              <option value="married">Married</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Community</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="community">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Are you an Orphan?</label>
+          <div class="col-sm-8">
+            <div class="form-check">
+              <input type="radio" id="Yes" name="option" value="Yes">
+<label for="Yes">Yes</label><br>
+<input type="radio" id="No" name="option" value="No">
+<label for="No">No</label><br>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Address</label>
+          <div class="col-sm-8">
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Community Certificate</label>
+          <div class="col-sm-8">
+            <input type="file" class="form-control-file">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Page 2 - Personal Details -->
+      <div class="form-page" id="page-2">
+        <h3>Page 2: Personal Details</h3>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">First Graduate</label>
+          <div class="col-sm-8">
+            <div class="form-check">
+              <input type="radio" id="Yes1" name="option1" value="Yes">
+<label for="Yes1">Yes</label><br>
+<input type="radio" id="No1" name="option1" value="No">
+<label for="No1">No</label><br>
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Annual Income</label>
+          <div class="col-sm-8">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">&#8377;</span>
+              </div>
+              <input type="number" class="form-control" id="annual_income">
+            </div>
+          </div>
+        </div>
+        
+      
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">12th Marks (%)</label>
+          <div class="col-sm-8">
+            <input type="number" class="form-control" id="twelfth-marks">
+          </div>
+        </div>
+      
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Year of Passing (12th)</label>
+          <div class="col-sm-8">
+            <select class="form-control">
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <!-- Add more options for other years -->
+            </select>
+          </div>
+        </div>
+      
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">10th Marks (%)</label>
+          <div class="col-sm-8">
+            <input type="number" class="form-control" id="tenth-marks">
+          </div>
+        </div>
+      
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Year of Passing (10th)</label>
+          <div class="col-sm-8">
+            <select class="form-control">
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <!-- Add more options for other years -->
+            </select>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Page 3 - Other Details -->
+<div class="form-page" id="page-3">
+  <h3>Page 3: Other Details</h3>
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">Day Scholar or Hosteller</label>
+    <div class="col-sm-8">
+      <select class="form-control">
+        <option value="day_scholar">Day Scholar</option>
+        <option value="hosteller">Hosteller</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">Hostel Type</label>
+    <div class="col-sm-8">
+      <select class="form-control">
+        <option value="paid">Paid</option>
+        <option value="free">Free</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">Institution Name</label>
+    <div class="col-sm-8">
+      <select class="form-control" id="inst_name">
+        <option value="CEG">CEG</option>
+        <option value="MIT">MIT</option>
+        <option value="ACT">ACT</option>
+        <option value="SAP">SAP</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">Course Name</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id = "course_name">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label">Regular/Part-Time</label>
+    <div class="col-sm-8">
+      <select class="form-control">
+        <option value="regular">Regular</option>
+        <option value="part_time">Part-Time</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+      
+      <!-- Page 4 - Bank Details -->
+      <div class="form-page" id="page-4">
+        <h3>Page 4: Bank Details</h3>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Bank Name</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Account Number</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" maxlength="11">
+          </div>
+        </div>
+        
+        
+      </div>
+      
+      <!-- Page 5 - Submit Button -->
+      <div class="form-page" id="page-5">
+        <div class="text-center">
+          
+            <button class="btn btn-primary" type="submit">Submit</button>
+            
+        </div>
+      </div>
+      <br>
+      
+      <!-- Pagination Buttons -->
+      <div class="text-center">
+        <button class="btn btn-primary" id="btn-prev" style="display: none;">Previous</button>
+        <button class="btn btn-primary" id="btn-next">Next</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var currentPage = 1;
+      var formPages = $('.form-page');
+      var totalPages = formPages.length;
+
+      function showPage(pageNumber) {
+        formPages.removeClass('active');
+        $('#page-' + pageNumber).addClass('active');
+        if (pageNumber === 1) {
+          $('#btn-prev').hide();
+        } else {
+          $('#btn-prev').show();
+        }
+        if (pageNumber === totalPages) {
+          $('#btn-next').hide();
+        } else {
+          $('#btn-next').show();
+        }
+      }
+
+      function goToNextPage() {
+        if (currentPage < totalPages) {
+          currentPage++;
+          showPage(currentPage);
+        }
+      }
+
+      function goToPreviousPage() {
+        if (currentPage > 1) {
+          currentPage--;
+          showPage(currentPage);
+        }
+      }
+
+      $('#btn-next').click(function(e) {
+        e.preventDefault();
+        goToNextPage();
+      });
+
+      $('#btn-prev').click(function(e) {
+        e.preventDefault();
+        goToPreviousPage();
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('#twelfth-marks').on('input', function() {
+        validatePercentage($(this));
+      });
+  
+      $('#tenth-marks').on('input', function() {
+        validatePercentage($(this));
+      });
+  
+      function validatePercentage(inputField) {
+        var value = inputField.val();
+        if (value < 1 || value > 100) {
+          inputField.addClass('is-invalid');
+        } else {
+          inputField.removeClass('is-invalid');
+        }
+      }
+    });
+  </script> 
+  <script src="/static/script.js"></script>
+</body>
+</html>
+
+
+
+
+
